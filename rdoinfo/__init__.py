@@ -1,9 +1,16 @@
-import copy
 import collections
+import copy
+import six
 import yaml
+from os import path
 
 
 __version__ = '0.2'
+
+"""
+rdoinfo module provides a set of methods to interact with
+metadata files contained in the repository.
+"""
 
 
 class RdoinfoException(Exception):
@@ -43,15 +50,35 @@ class DuplicatedProject(InvalidInfoFormat):
     msg_fmt = "Duplicated project: %(prj)s"
 
 
-def parse_info_file(fn):
-    info = yaml.load(open(fn, 'rb'))
-    parse_info(info)
+def include_packages(info, include_info):
+    if include_info:
+        if 'packages' in include_info.keys():
+            info['packages'] = info['packages'] + include_info['packages']
+        if 'package-configs' in include_info.keys():
+            info['package-configs'].update(include_info['package-configs'])
     return info
 
 
-def parse_info(info):
+def parse_info_file(fn, apply_tag=None, include_fns=['deps.yml']):
+    """
+    Parse rdoinfo metadata files.
+
+    :param fn: name of main metadata file, as rdo.yml
+    :param apply_tag: tag to apply
+    :param include_fns: list of additional files to be parsed, defaults to deps.yml
+    :returns: dictionary containing all packages in rdoinfo
+    """
+    info = yaml.load(open(fn, 'rb'))
+    for fn in include_fns:
+        include_file = path.join(path.dirname(fn), fn)
+        include_info = yaml.load(open(include_file, 'rb'))
+        info = include_packages(info, include_info)
+    parse_info(info, apply_tag=apply_tag)
+    return info
+
+def parse_info(info, apply_tag=None):
     parse_releases(info)
-    parse_packages(info)
+    parse_packages(info, apply_tag=apply_tag)
 
 
 def parse_release_repo(repo, default_branch=None):
@@ -100,7 +127,7 @@ def substitute_package(pkg):
     # substitution is very simple, no recursion
     new_pkg = copy.copy(pkg)
     for key, val in pkg.items():
-        if isinstance(val, basestring):
+        if isinstance(val, six.string_types):
             try:
                 new_pkg[key] = val % pkg
             except KeyError:
@@ -108,7 +135,7 @@ def substitute_package(pkg):
     return new_pkg
 
 
-def parse_package(pkg, info):
+def parse_package(pkg, info, apply_tag=None):
     pkddefault, pkgconfs = parse_package_configs(info)
     # start with default package config
     parsed_pkg = copy.deepcopy(pkddefault)
@@ -121,6 +148,11 @@ def parse_package(pkg, info):
             raise UndefinedPackageConfig(conf=conf_id)
         parsed_pkg.update(conf)
     parsed_pkg.update(pkg)
+    if apply_tag:
+        tags = parsed_pkg.get('tags', {})
+        tagdict = tags.get(apply_tag)
+        if tagdict:
+            parsed_pkg.update(tagdict)
     pkg = substitute_package(parsed_pkg)
 
     try:
@@ -154,12 +186,10 @@ def check_for_duplicates(pkg, pkgs):
     for oldpkg in pkgs:
         if pkg['name'] == oldpkg['name']:
             return True
-        if pkg['upstream'] == oldpkg['upstream']:
-            return True
     return False
 
 
-def parse_packages(info):
+def parse_packages(info, apply_tag=None):
     try:
         pkgs = info['packages']
     except KeyError:
@@ -169,7 +199,7 @@ def parse_packages(info):
 
     parsed_pkgs = []
     for pkg in pkgs:
-        parsed_pkg = parse_package(pkg, info)
+        parsed_pkg = parse_package(pkg, info, apply_tag=apply_tag)
         if check_for_duplicates(parsed_pkg, parsed_pkgs):
             raise DuplicatedProject(prj=parsed_pkg['name'])
         else:

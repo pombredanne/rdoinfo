@@ -1,0 +1,1057 @@
+packages:
+- project: ansible-config_template
+  tags:
+    ussuri:
+- project: ansible-pacemaker
+  tags:
+    ussuri:
+- project: ansible-role-atos-hsm
+  tags:
+    ussuri:
+- project: ansible-role-chrony
+  tags:
+    ussuri:
+- project: ansible-role-container-registry
+  tags:
+    ussuri:
+- project: ansible-role-openstack-operations
+  tags:
+    ussuri:
+- project: ansible-role-redhat-subscription
+  tags:
+    ussuri:
+- project: ansible-role-thales-hsm
+  tags:
+    ussuri:
+- project: ansible-role-tripleo-modify-image
+  tags:
+    ussuri:
+- project: aodh
+  tags:
+    ussuri:
+- project: aodhclient
+  tags:
+    ussuri:
+- project: automaton
+  tags:
+    ussuri:
+- project: barbican
+  tags:
+    ussuri:
+- project: barbican-tempest-plugin
+  tags:
+    ussuri:
+- project: barbicanclient
+  tags:
+    ussuri:
+- project: castellan
+  tags:
+    ussuri:
+- project: ceilometer
+  tags:
+    ussuri:
+- project: ceilometerclient
+  tags:
+    ussuri:
+      source-branch: 3ff6bac3da348bad0b220ab26eab6ad6bfbeb675
+- project: ceilometermiddleware
+  tags:
+    ussuri:
+- project: cinder
+  tags:
+    ussuri:
+- project: cinder-tempest-plugin
+  tags:
+    ussuri:
+- project: cinderclient
+  tags:
+    ussuri:
+- project: cinderlib
+  tags:
+    ussuri:
+- project: cliff
+  tags:
+    ussuri:
+- project: cloudkitty
+  tags:
+    ussuri:
+- project: cloudkitty-dashboard
+  tags:
+    ussuri:
+- project: cloudkittyclient
+  tags:
+    ussuri:
+- project: collectd-gnocchi
+  tags:
+    ussuri:
+- project: congress
+  tags:
+    ussuri:
+- project: congress-tempest-plugin
+  tags:
+    ussuri:
+- project: congressclient
+  tags:
+    ussuri:
+- project: cursive
+  tags:
+    ussuri:
+- project: debtcollector
+  tags:
+    ussuri:
+- project: designate
+  tags:
+    # FIXME(ykarel) once FTBFS https://review.rdoproject.org/r/#/c/22584/
+    # is fixed.
+    ussuri:
+      source-branch: 4d47719b2638a96f0f2b5f71ddb0e94619fa3980
+- project: designate-dashboard
+  tags:
+    ussuri:
+- project: designate-tempest-plugin
+  tags:
+    ussuri:
+- project: designateclient
+  tags:
+    ussuri:
+- project: dib-utils
+  tags:
+    ussuri:
+- project: diskimage-builder
+  tags:
+    ussuri:
+- project: dracclient
+  tags:
+    ussuri:
+- project: ec2-api
+  tags:
+    ussuri:
+- project: ec2api-tempest-plugin
+  tags:
+    ussuri:
+- project: futurist
+  tags:
+    ussuri:
+- project: glance
+  tags:
+    ussuri:
+- project: glance_store
+  tags:
+    ussuri:
+- project: glanceclient
+  tags:
+    ussuri:
+- project: glare
+  tags:
+    ussuri:
+- project: glareclient
+  tags:
+    ussuri:
+- project: gnocchi
+  tags:
+    ussuri:
+      source-branch: stable/4.3
+- project: gnocchiclient
+  tags:
+    ussuri:
+- project: hacking
+  tags:
+    ussuri:
+- project: hardware
+  tags:
+    ussuri:
+- project: heat
+  tags:
+    ussuri:
+- project: heat-agents
+  tags:
+    ussuri:
+- project: heat-dashboard
+  tags:
+    ussuri:
+- project: heat-tempest-plugin
+  tags:
+    ussuri:
+- project: heat-translator
+  tags:
+    ussuri:
+- project: heatclient
+  tags:
+    ussuri:
+- project: horizon
+  tags:
+    ussuri:
+- project: ironic
+  tags:
+    ussuri:
+- project: ironic-inspector
+  tags:
+    ussuri:
+- project: ironic-inspector-client
+  tags:
+    ussuri:
+- project: ironic-lib
+  tags:
+    ussuri:
+- project: ironic-prometheus-exporter
+  tags:
+    ussuri:
+- project: ironic-python-agent
+  tags:
+    ussuri:
+- project: ironic-python-agent-builder
+  tags:
+    ussuri:
+- project: ironic-staging-drivers
+  tags:
+    ussuri:
+- project: ironic-tempest-plugin
+  tags:
+    ussuri:
+- project: ironic-ui
+  tags:
+    ussuri:
+- project: ironicclient
+  tags:
+    ussuri:
+- project: keystone
+  tags:
+    ussuri:
+- project: keystone-tempest-plugin
+  tags:
+    ussuri:
+- project: keystoneauth1
+  tags:
+    ussuri:
+- project: keystoneclient
+  tags:
+    ussuri:
+- project: keystonemiddleware
+  tags:
+    ussuri:
+- project: kolla
+  tags:
+    ussuri:
+- project: kuryr
+  tags:
+    ussuri:
+- project: kuryr-kubernetes
+  tags:
+    ussuri:
+- project: kuryr-tempest-plugin
+  tags:
+    ussuri:
+- project: magnum
+  tags:
+    ussuri:
+- project: magnum-tempest-plugin
+  tags:
+    ussuri:
+- project: magnum-ui
+  tags:
+    ussuri:
+- project: magnumclient
+  tags:
+    ussuri:
+- project: manila
+  tags:
+    ussuri:
+- project: manila-tempest-plugin
+  tags:
+    ussuri:
+- project: manila-ui
+  tags:
+    ussuri:
+- project: manilaclient
+  tags:
+    ussuri:
+- project: metalsmith
+  tags:
+    ussuri:
+- project: microversion-parse
+  tags:
+    ussuri:
+- project: mistral
+  tags:
+    ussuri:
+- project: mistral-dashboard
+  tags:
+    ussuri:
+- project: mistral-lib
+  tags:
+    ussuri:
+- project: mistral-tempest-plugin
+  tags:
+    ussuri:
+- project: mistralclient
+  tags:
+    ussuri:
+- project: monascaclient
+  tags:
+    ussuri:
+- project: mox3
+  tags:
+    ussuri:
+- project: murano
+  tags:
+    ussuri:
+- project: murano-agent
+  tags:
+    ussuri:
+- project: murano-dashboard
+  tags:
+    ussuri:
+- project: murano-tempest-plugin
+  tags:
+    ussuri:
+- project: muranoclient
+  tags:
+    ussuri:
+- project: networking-ansible
+  tags:
+    ussuri:
+- project: networking-arista
+  tags:
+    ussuri:
+- project: networking-bagpipe
+  tags:
+    ussuri:
+- project: networking-baremetal
+  tags:
+    ussuri:
+- project: networking-bgpvpn
+  tags:
+    ussuri:
+- project: networking-bigswitch
+  tags:
+    ussuri:
+- project: networking-fujitsu
+  tags:
+    ussuri:
+- project: networking-generic-switch
+  tags:
+    ussuri:
+- project: networking-l2gw
+  tags:
+    ussuri:
+- project: networking-l2gw-tempest-plugin
+  tags:
+    ussuri:
+- project: networking-mlnx
+  tags:
+    ussuri:
+- project: networking-odl
+  tags:
+    ussuri:
+- project: networking-ovn
+  tags:
+    ussuri:
+- project: networking-sfc
+  tags:
+    ussuri:
+- project: neutron
+  tags:
+    ussuri:
+- project: neutron-dynamic-routing
+  tags:
+    ussuri:
+- project: neutron-fwaas
+  tags:
+    ussuri:
+- project: neutron-lib
+  tags:
+    ussuri:
+- project: neutron-tempest-plugin
+  tags:
+    ussuri:
+- project: neutron-vpnaas
+  tags:
+    ussuri:
+- project: neutronclient
+  tags:
+    ussuri:
+- project: nova
+  tags:
+    ussuri:
+- project: novaclient
+  tags:
+    ussuri:
+- project: novajoin
+  tags:
+    ussuri:
+- project: novajoin-tempest-plugin
+  tags:
+    ussuri:
+- project: octavia
+  tags:
+    ussuri:
+- project: octavia-dashboard
+  tags:
+    ussuri:
+- project: octavia-lib
+  tags:
+    ussuri:
+- project: octavia-tempest-plugin
+  tags:
+    ussuri:
+- project: octaviaclient
+  tags:
+    ussuri:
+- project: openstack-macros
+  tags:
+    ussuri:
+- project: openstack-selinux
+  tags:
+    ussuri:
+- project: openstackclient
+  tags:
+    ussuri:
+- project: openstacksdk
+  tags:
+    ussuri:
+- project: os-apply-config
+  tags:
+    ussuri:
+- project: os-brick
+  tags:
+    ussuri:
+- project: os-client-config
+  tags:
+    ussuri:
+- project: os-collect-config
+  tags:
+    ussuri:
+- project: os-faults
+  tags:
+    ussuri:
+- project: os-ken
+  tags:
+    ussuri:
+- project: os-net-config
+  tags:
+    ussuri:
+- project: os-refresh-config
+  tags:
+    ussuri:
+- project: os-resource-classes
+  tags:
+    ussuri:
+- project: os-service-types
+  tags:
+    ussuri:
+- project: os-testr
+  tags:
+    ussuri:
+- project: os-traits
+  tags:
+    ussuri:
+- project: os-vif
+  tags:
+    ussuri:
+- project: os-win
+  tags:
+    ussuri:
+- project: os-xenapi
+  tags:
+    ussuri:
+- project: osc-lib
+  tags:
+    ussuri:
+- project: osc-placement
+  tags:
+    ussuri:
+- project: oslo-cache
+  tags:
+    ussuri:
+- project: oslo-concurrency
+  tags:
+    ussuri:
+- project: oslo-config
+  tags:
+    ussuri:
+- project: oslo-context
+  tags:
+    ussuri:
+- project: oslo-db
+  tags:
+    ussuri:
+- project: oslo-i18n
+  tags:
+    ussuri:
+- project: oslo-log
+  tags:
+    ussuri:
+- project: oslo-messaging
+  tags:
+    ussuri:
+- project: oslo-middleware
+  tags:
+    ussuri:
+- project: oslo-policy
+  tags:
+    ussuri:
+- project: oslo-privsep
+  tags:
+    ussuri:
+- project: oslo-reports
+  tags:
+    ussuri:
+- project: oslo-rootwrap
+  tags:
+    ussuri:
+- project: oslo-serialization
+  tags:
+    ussuri:
+- project: oslo-service
+  tags:
+    ussuri:
+- project: oslo-sphinx
+  tags:
+    ussuri:
+      source-branch: f92583cfc34292ec1441368f984c9692346946c4
+- project: oslo-upgradecheck
+  tags:
+    ussuri:
+- project: oslo-utils
+  tags:
+    ussuri:
+- project: oslo-versionedobjects
+  tags:
+    ussuri:
+- project: oslo-vmware
+  tags:
+    ussuri:
+- project: oslotest
+  tags:
+    ussuri:
+- project: osops-tools-monitoring-oschecks
+  tags:
+    ussuri:
+- project: osprofiler
+  tags:
+    ussuri:
+- project: oswin-tempest-plugin
+  tags:
+    ussuri:
+- project: ovsdbapp
+  tags:
+    ussuri:
+- project: packstack
+  tags:
+    ussuri:
+- project: panko
+  tags:
+    ussuri:
+- project: pankoclient
+  tags:
+    ussuri:
+- project: patrole
+  tags:
+    ussuri:
+- project: paunch
+  tags:
+    ussuri:
+- project: placement
+  tags:
+    ussuri:
+- project: proliantutils
+  tags:
+    ussuri:
+- project: puppet-aodh
+  tags:
+    ussuri:
+- project: puppet-apache
+  tags:
+    ussuri:
+- project: puppet-archive
+  tags:
+    ussuri:
+- project: puppet-auditd
+  tags:
+    ussuri:
+- project: puppet-barbican
+  tags:
+    ussuri:
+- project: puppet-cassandra
+  tags:
+    ussuri:
+- project: puppet-ceilometer
+  tags:
+    ussuri:
+- project: puppet-ceph
+  tags:
+    ussuri:
+- project: puppet-certmonger
+  tags:
+    ussuri:
+- project: puppet-cinder
+  tags:
+    ussuri:
+- project: puppet-collectd
+  tags:
+    ussuri:
+- project: puppet-concat
+  tags:
+    ussuri:
+- project: puppet-congress
+  tags:
+    ussuri:
+- project: puppet-contrail
+  tags:
+    ussuri:
+- project: puppet-corosync
+  tags:
+    ussuri:
+- project: puppet-datacat
+  tags:
+    ussuri:
+- project: puppet-designate
+  tags:
+    ussuri:
+- project: puppet-dns
+  tags:
+    ussuri:
+- project: puppet-ec2api
+  tags:
+    ussuri:
+- project: puppet-elasticsearch
+  tags:
+    ussuri:
+- project: puppet-etcd
+  tags:
+    ussuri:
+- project: puppet-fdio
+  tags:
+    ussuri:
+- project: puppet-firewall
+  tags:
+    ussuri:
+- project: puppet-fluentd
+  tags:
+    ussuri:
+- project: puppet-git
+  tags:
+    ussuri:
+- project: puppet-glance
+  tags:
+    ussuri:
+- project: puppet-gnocchi
+  tags:
+    ussuri:
+- project: puppet-haproxy
+  tags:
+    ussuri:
+- project: puppet-heat
+  tags:
+    ussuri:
+- project: puppet-horizon
+  tags:
+    ussuri:
+- project: puppet-inifile
+  tags:
+    ussuri:
+- project: puppet-ipaclient
+  tags:
+    ussuri:
+- project: puppet-ironic
+  tags:
+    ussuri:
+- project: puppet-java
+  tags:
+    ussuri:
+- project: puppet-kafka
+  tags:
+    ussuri:
+- project: puppet-keepalived
+  tags:
+    ussuri:
+- project: puppet-keystone
+  tags:
+    ussuri:
+- project: puppet-kibana3
+  tags:
+    ussuri:
+- project: puppet-kmod
+  tags:
+    ussuri:
+- project: puppet-lib-file_concat
+  tags:
+    ussuri:
+- project: puppet-magnum
+  tags:
+    ussuri:
+- project: puppet-manila
+  tags:
+    ussuri:
+- project: puppet-memcached
+  tags:
+    ussuri:
+- project: puppet-midonet
+  tags:
+    ussuri:
+- project: puppet-mistral
+  tags:
+    ussuri:
+- project: puppet-module-data
+  tags:
+    ussuri:
+- project: puppet-mongodb
+  tags:
+    ussuri:
+- project: puppet-murano
+  tags:
+    ussuri:
+- project: puppet-mysql
+  tags:
+    ussuri:
+- project: puppet-n1k-vsm
+  tags:
+    ussuri:
+- project: puppet-neutron
+  tags:
+    ussuri:
+- project: puppet-nova
+  tags:
+    ussuri:
+- project: puppet-nssdb
+  tags:
+    ussuri:
+- project: puppet-ntp
+  tags:
+    ussuri:
+      source-branch: 4.2.0
+- project: puppet-octavia
+  tags:
+    ussuri:
+- project: puppet-opendaylight
+  tags:
+    ussuri:
+      source-branch: stable/fluorine
+- project: puppet-openstack_extras
+  tags:
+    ussuri:
+- project: puppet-openstacklib
+  tags:
+    ussuri:
+- project: puppet-oslo
+  tags:
+    ussuri:
+- project: puppet-ovn
+  tags:
+    ussuri:
+- project: puppet-pacemaker
+  tags:
+    ussuri:
+- project: puppet-panko
+  tags:
+    ussuri:
+- project: puppet-placement
+  tags:
+    ussuri:
+- project: puppet-powerdns
+  tags:
+    ussuri:
+- project: puppet-qdr
+  tags:
+    ussuri:
+- project: puppet-rabbitmq
+  tags:
+    ussuri:
+- project: puppet-redis
+  tags:
+    ussuri:
+- project: puppet-remote
+  tags:
+    ussuri:
+- project: puppet-rsync
+  tags:
+    ussuri:
+- project: puppet-rsyslog
+  tags:
+    # NOTE(aschultz): rsyslog broke backwards compatibility with
+    # # https://github.com/voxpupuli/puppet-rsyslog/pull/136
+    ussuri:
+      source-branch: 2548a0d95c1549b506b7bb2314dd149b028fc04b
+- project: puppet-sahara
+  tags:
+    ussuri:
+- project: puppet-sensu
+  tags:
+    ussuri:
+- project: puppet-snmp
+  tags:
+    ussuri:
+- project: puppet-ssh
+  tags:
+    ussuri:
+- project: puppet-staging
+  tags:
+    ussuri:
+- project: puppet-stdlib
+  tags:
+    ussuri:
+- project: puppet-swift
+  tags:
+    ussuri:
+- project: puppet-sysctl
+  tags:
+    ussuri:
+- project: puppet-systemd
+  tags:
+    ussuri:
+- project: puppet-tacker
+  tags:
+    ussuri:
+- project: puppet-tempest
+  tags:
+    ussuri:
+- project: puppet-timezone
+  tags:
+    ussuri:
+- project: puppet-tomcat
+  tags:
+    ussuri:
+- project: puppet-tripleo
+  tags:
+    ussuri:
+- project: puppet-trove
+  tags:
+    ussuri:
+- project: puppet-uchiwa
+  tags:
+    ussuri:
+- project: puppet-vcsrepo
+  tags:
+    ussuri:
+- project: puppet-veritas_hyperscale
+  tags:
+    ussuri:
+- project: puppet-vitrage
+  tags:
+    ussuri:
+- project: puppet-vlan
+  tags:
+    ussuri:
+- project: puppet-vswitch
+  tags:
+    ussuri:
+- project: puppet-watcher
+  tags:
+    ussuri:
+- project: puppet-xinetd
+  tags:
+    ussuri:
+- project: puppet-zaqar
+  tags:
+    ussuri:
+- project: puppet-zookeeper
+  tags:
+    ussuri:
+- project: pycadf
+  tags:
+    ussuri:
+- project: rally
+  tags:
+    ussuri:
+- project: rally-openstack
+  tags:
+    ussuri:
+- project: reno
+  tags:
+    ussuri:
+- project: requestsexceptions
+  tags:
+    ussuri:
+- project: rsd-lib
+  tags:
+    ussuri:
+- project: rsdclient
+  tags:
+    ussuri:
+- project: sahara
+  tags:
+    ussuri:
+- project: sahara-dashboard
+  tags:
+    ussuri:
+- project: sahara-image-elements
+  tags:
+    ussuri:
+- project: sahara-plugin-ambari
+  tags:
+    ussuri:
+- project: sahara-plugin-cdh
+  tags:
+    ussuri:
+- project: sahara-plugin-mapr
+  tags:
+    ussuri:
+- project: sahara-plugin-spark
+  tags:
+    ussuri:
+- project: sahara-plugin-storm
+  tags:
+    ussuri:
+- project: sahara-plugin-vanilla
+  tags:
+    ussuri:
+- project: sahara-tests
+  tags:
+    ussuri:
+- project: saharaclient
+  tags:
+    ussuri:
+- project: scciclient
+  tags:
+    ussuri:
+- project: senlin
+  tags:
+    ussuri:
+- project: senlinclient
+  tags:
+    ussuri:
+- project: shade
+  tags:
+    ussuri:
+- project: shaker
+  tags:
+    ussuri:
+- project: sphinx-feature-classification
+  tags:
+    ussuri:
+- project: stackviz
+  tags:
+    ussuri:
+- project: stevedore
+  tags:
+    ussuri:
+- project: sushy
+  tags:
+    ussuri:
+- project: sushy-oem-idrac
+  tags:
+    ussuri:
+- project: swift
+  tags:
+    ussuri:
+- project: swiftclient
+  tags:
+    ussuri:
+- project: tacker
+  tags:
+    ussuri:
+- project: tackerclient
+  tags:
+    ussuri:
+- project: tap-as-a-service
+  tags:
+    ussuri:
+- project: taskflow
+  tags:
+    ussuri:
+- project: telemetry-tempest-plugin
+  tags:
+    ussuri:
+- project: tempest
+  tags:
+    ussuri:
+- project: tempest-horizon
+  tags:
+    ussuri:
+- project: tempestconf
+  tags:
+    ussuri:
+- project: tobiko
+  tags:
+    ussuri:
+- project: tooz
+  tags:
+    ussuri:
+- project: tripleo-ansible
+  tags:
+    ussuri:
+- project: tripleo-common
+  tags:
+    ussuri:
+- project: tripleo-common-tempest-plugin
+  tags:
+    ussuri:
+- project: tripleo-heat-templates
+  tags:
+    ussuri:
+- project: tripleo-heat-templates-compat
+  tags:
+    ussuri:
+      source-branch: stable/train
+- project: tripleo-image-elements
+  tags:
+    ussuri:
+- project: tripleo-ipsec
+  tags:
+    ussuri:
+- project: tripleo-puppet-elements
+  tags:
+    ussuri:
+- project: tripleo-repos
+  tags:
+    ussuri:
+- project: tripleo-validations
+  tags:
+    ussuri:
+- project: tripleoclient
+  tags:
+    ussuri:
+- project: trove
+  tags:
+    ussuri:
+- project: trove-dashboard
+  tags:
+    ussuri:
+- project: trove-tempest-plugin
+  tags:
+    ussuri:
+- project: troveclient
+  tags:
+    ussuri:
+- project: virtualbmc
+  tags:
+    ussuri:
+- project: vitrage
+  tags:
+    ussuri:
+- project: vitrage-dashboard
+  tags:
+    ussuri:
+- project: vitrage-tempest-plugin
+  tags:
+    ussuri:
+- project: vitrageclient
+  tags:
+    ussuri:
+- project: vmware-nsx
+  tags:
+    ussuri:
+- project: vmware-nsx-tempest-plugin
+  tags:
+    ussuri:
+- project: vmware-nsxlib
+  tags:
+    ussuri:
+- project: watcher
+  tags:
+    ussuri:
+- project: watcher-tempest-plugin
+  tags:
+    ussuri:
+- project: wsme
+  tags:
+    ussuri:
+- project: zaqar
+  tags:
+    ussuri:
+- project: zaqar-tempest-plugin
+  tags:
+    ussuri:
+- project: zaqarclient
+  tags:
+    ussuri:
